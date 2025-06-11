@@ -16,3 +16,17 @@ std::string check_speed(double S, double T) {
 
     return result;
 }
+
+
+
+std::string check_divide(double x) {
+    std::string result;
+    if (x == -3) {
+        result = "Помилка: ділення на нуль!";
+    } else {
+        double value = 1 / (x + 3);
+        result = "Результат: " + std::to_string(value);
+    }
+
+    return result;
+}
