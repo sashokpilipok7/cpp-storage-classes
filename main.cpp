@@ -7,21 +7,34 @@ int main() {
     int choice;
 
     do {
-        cout << "\n==== ГОЛОВНЕ МЕНЮ ====\n";
-        cout << "1. Завдання: Відстань у вершках\n";
-        cout << "0. Вихід\n";
-        cout << "Введіть ваш вибір:";
+        cout << "\n==== Main Menu ====\n";
+        cout << "1. Run task bank 01\n";
+        cout << "1. Run task bank 02\n";
+        cout << "0. Exit\n";
+        cout << "Select choice (number):";
         cin >> choice;
 
         switch (choice) {
-            case 1:
-                distance_count_1();
+            case 1:{
+                 string result = distance_count_1();
+                 cout << result << endl;
+                 break;
+            }
+            case 2:{
+                double S, T;
+                cout << "Введіть відстань (км): ";
+                cin >> S;
+                cout << "Введіть час (хв): ";
+                cin >> T;
+                string result = check_speed(S, T);
+                cout << result << endl;
                 break;
+            }
             case 0:
-                cout << "Вихід з програми.\n";
+                cout << "Exit from program.\n";
                 break;
             default:
-                cout << "Невірний вибір. Спробуйте ще раз.\n";
+                cout << "Incorrect choice.\n";
         }
 
     } while (choice != 0);

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int distance_count_1() {
+std::string distance_count_1() {
     SetConsoleOutputCP(65001);
     // Вхідні дані
     double miles = 634; // морські милі
@@ -15,7 +15,7 @@ int distance_count_1() {
     double verzhki = yards * verzhki_per_yard;  // переведення ярдів у вершки
 
     // Вивід результату
-    cout << "Відстань у вершках: " << verzhki << endl;
+    std::string result =  "\nВідстань у вершках: " + std::to_string(verzhki) + "\n";
 
-    return 0;
+    return result;
 }
