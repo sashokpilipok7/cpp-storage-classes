@@ -5,4 +5,6 @@ https://code.visualstudio.com/docs/cpp/config-mingw
 
 ### Для запуску скомпілювати таким чином
 g++ main.cpp files/lab_bank01.cpp files/lab_bank02.cpp  -o catalog_app 
+
+### Запуск
 .\catalog_app.exe
